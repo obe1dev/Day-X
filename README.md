@@ -1,4 +1,4 @@
-# Day-X Outline
+# Day-X Outline Changed
 
 Day-X is a simple journaling iOS app that we use to demonstrate many concepts we cover in class.
 
