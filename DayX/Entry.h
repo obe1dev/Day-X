@@ -10,8 +10,14 @@
 
 @interface Entry : NSObject
 
+
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * bodyText;
 @property (nonatomic, strong) NSDate * timestamp;
 
+- (id) initWithDictionary:(NSDictionary *) dictionary;
+
+- (NSDictionary *) dictionaryRepresentation;
+
 @end
+

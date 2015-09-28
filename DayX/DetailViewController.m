@@ -30,14 +30,9 @@
         self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.textField.text bodyText:self.textView.text];
     }
  
-//    Entry *newEntry = [Entry new];
-//    newEntry.title = self.textView.text;
-//    newEntry.bodyText = self.textField.text;
-//    [[EntryController sharedInstance] addEntry:newEntry];
-   [self.navigationController popViewControllerAnimated:YES];
-//    
-//    self.entry = newEntry;
- 
+    [self.navigationController popViewControllerAnimated:YES];
+    [[EntryController sharedInstance] save:[EntryController sharedInstance].entries];
+    
     
 }
 

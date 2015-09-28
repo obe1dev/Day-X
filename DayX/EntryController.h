@@ -23,4 +23,6 @@
 
 -(void) removeEntry:(Entry *)entry;
 
+-(void) save:(NSArray *) entries;
+
 @end

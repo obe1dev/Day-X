@@ -10,6 +10,8 @@
 #import "DetailViewController.h"
 #import "EntryController.h"
 
+
+
 @interface ListViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -40,6 +42,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
