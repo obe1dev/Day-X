@@ -26,6 +26,8 @@
     
 }
 
+
+//question what is this line [segue.identifier isEqualToString:@"viewEntry"]
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"viewEntry"]) {
         
@@ -42,11 +44,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

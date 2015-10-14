@@ -18,6 +18,8 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
 
 @implementation EntryController
 
+
+//question is it always just one sharedInstance method?
 + (EntryController *)sharedInstance {
     static EntryController *sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -48,6 +50,7 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
         return;
     }
     
+//question what is muteabelCopy
     NSMutableArray *entryList = self.entries.mutableCopy;
     [entryList addObject:entry];
     self.entries = entryList;
@@ -73,6 +76,8 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
 - (void)saveToPersistentStorage {
     NSMutableArray *entryDictionaries = [NSMutableArray new];
     for (Entry *entry in self.entries) {
+        
+//question what is dictionaryRepresentation
         [entryDictionaries addObject:[entry dictionaryRepresentation]];
     }
     
@@ -84,7 +89,6 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
     [self saveToPersistentStorage];
 }
 
-#pragma test
 
 - (void)loadFromPersistentStorage {
     
@@ -92,6 +96,8 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
     
     NSMutableArray *entries = [NSMutableArray new];
     for (NSDictionary *entry in entryDictionaries) {
+        
+//question what is this doing
         [entries addObject:[[Entry alloc] initWithDictionary:entry]];
     }
     

@@ -16,7 +16,6 @@ static NSString * const timestampKey = @"timestampKey";
 @implementation Entry
 
 
-//
 - (id) initWithDictionary:(NSDictionary *) dictionary {
     self = [super init];
     

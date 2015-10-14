@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47CAFEF41BC02B2A00337D43 /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAFEF31BC02B2A00337D43 /* AppearanceController.m */; settings = {ASSET_TAGS = (); }; };
 		47D80ED31BB390E2008B2E6E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED21BB390E2008B2E6E /* ListViewController.m */; settings = {ASSET_TAGS = (); }; };
 		47D80ED61BB390FC008B2E6E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED51BB390FC008B2E6E /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		47D80ED91BB391C6008B2E6E /* ListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED81BB391C6008B2E6E /* ListTableViewDataSource.m */; settings = {ASSET_TAGS = (); }; };
@@ -14,7 +15,6 @@
 		47D80F7A1BB4DAA4008B2E6E /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80F791BB4DAA4008B2E6E /* EntryController.m */; settings = {ASSET_TAGS = (); }; };
 		68FFDFDC1AD8144B009F5D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDB1AD8144B009F5D0A /* main.m */; };
 		68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */; };
-		68FFDFE21AD8144B009F5D0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFE11AD8144B009F5D0A /* ViewController.m */; };
 		68FFDFE51AD8144B009F5D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE31AD8144B009F5D0A /* Main.storyboard */; };
 		68FFDFE71AD8144B009F5D0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE61AD8144B009F5D0A /* Images.xcassets */; };
 		68FFDFEA1AD8144B009F5D0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE81AD8144B009F5D0A /* LaunchScreen.xib */; };
@@ -32,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47CAFEF21BC02B2A00337D43 /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppearanceController.h; path = "../../../week 3/My-Pomodoro/My-Pomodoro/AppearanceController.h"; sourceTree = "<group>"; };
+		47CAFEF31BC02B2A00337D43 /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppearanceController.m; path = "../../../week 3/My-Pomodoro/My-Pomodoro/AppearanceController.m"; sourceTree = "<group>"; };
 		47D80ED11BB390E2008B2E6E /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		47D80ED21BB390E2008B2E6E /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		47D80ED41BB390FC008B2E6E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -47,8 +49,6 @@
 		68FFDFDB1AD8144B009F5D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68FFDFDD1AD8144B009F5D0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		68FFDFE01AD8144B009F5D0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		68FFDFE11AD8144B009F5D0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		68FFDFE41AD8144B009F5D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68FFDFE61AD8144B009F5D0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		68FFDFE91AD8144B009F5D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -98,8 +98,6 @@
 			children = (
 				68FFDFDD1AD8144B009F5D0A /* AppDelegate.h */,
 				68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */,
-				68FFDFE01AD8144B009F5D0A /* ViewController.h */,
-				68FFDFE11AD8144B009F5D0A /* ViewController.m */,
 				68FFDFE31AD8144B009F5D0A /* Main.storyboard */,
 				47D80ED71BB391C6008B2E6E /* ListTableViewDataSource.h */,
 				47D80ED81BB391C6008B2E6E /* ListTableViewDataSource.m */,
@@ -111,6 +109,8 @@
 				47D80F791BB4DAA4008B2E6E /* EntryController.m */,
 				47D80F751BB4D9EE008B2E6E /* Entry.h */,
 				47D80F761BB4D9EE008B2E6E /* Entry.m */,
+				47CAFEF21BC02B2A00337D43 /* AppearanceController.h */,
+				47CAFEF31BC02B2A00337D43 /* AppearanceController.m */,
 				68FFDFE61AD8144B009F5D0A /* Images.xcassets */,
 				68FFDFE81AD8144B009F5D0A /* LaunchScreen.xib */,
 				68FFDFD91AD8144B009F5D0A /* Supporting Files */,
@@ -248,9 +248,9 @@
 				47D80ED61BB390FC008B2E6E /* DetailViewController.m in Sources */,
 				47D80F7A1BB4DAA4008B2E6E /* EntryController.m in Sources */,
 				47D80F771BB4D9EE008B2E6E /* Entry.m in Sources */,
-				68FFDFE21AD8144B009F5D0A /* ViewController.m in Sources */,
 				68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */,
 				47D80ED31BB390E2008B2E6E /* ListViewController.m in Sources */,
+				47CAFEF41BC02B2A00337D43 /* AppearanceController.m in Sources */,
 				68FFDFDC1AD8144B009F5D0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -367,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

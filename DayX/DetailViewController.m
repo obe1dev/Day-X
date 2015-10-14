@@ -27,10 +27,13 @@
         self.entry.bodyText = self.textView.text;
         self.entry.timestamp = [NSDate date];
     } else {
+        
+//question why would this run souldn't the sender always be self.entry? if not what would it be?
         self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.textField.text bodyText:self.textView.text];
     }
  
     [self.navigationController popViewControllerAnimated:YES];
+//question what is this line doing 
     [[EntryController sharedInstance] save:[EntryController sharedInstance].entries];
     
     
@@ -56,15 +59,16 @@
     self.textView.text = entry.bodyText;
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
-}
+
 
 
 
