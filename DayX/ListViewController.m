@@ -9,6 +9,7 @@
 #import "ListViewController.h"
 #import "DetailViewController.h"
 #import "EntryController.h"
+#import "FirebaseController.h"
 
 
 
@@ -25,9 +26,8 @@
     [self.tableView reloadData];
     
 }
+ //TODO: something
 
-
-//question what is this line [segue.identifier isEqualToString:@"viewEntry"]
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"viewEntry"]) {
         
@@ -44,6 +44,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [FirebaseController creatAccount:@"ob1.bwo@gmail.com" password:@"brock"];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTabelView) name:@"loadEntries" object:nil];
+    
+}
+
+-(void) reloadTabelView{
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

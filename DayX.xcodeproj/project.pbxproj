@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47CAFEF41BC02B2A00337D43 /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAFEF31BC02B2A00337D43 /* AppearanceController.m */; settings = {ASSET_TAGS = (); }; };
-		47D80ED31BB390E2008B2E6E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED21BB390E2008B2E6E /* ListViewController.m */; settings = {ASSET_TAGS = (); }; };
-		47D80ED61BB390FC008B2E6E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED51BB390FC008B2E6E /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
-		47D80ED91BB391C6008B2E6E /* ListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED81BB391C6008B2E6E /* ListTableViewDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		47D80F771BB4D9EE008B2E6E /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80F761BB4D9EE008B2E6E /* Entry.m */; settings = {ASSET_TAGS = (); }; };
-		47D80F7A1BB4DAA4008B2E6E /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80F791BB4DAA4008B2E6E /* EntryController.m */; settings = {ASSET_TAGS = (); }; };
+		4731D50B1BD2AA7400BBC567 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4731D50A1BD2AA7400BBC567 /* Firebase.framework */; };
+		4731D50D1BD2AC4F00BBC567 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4731D50C1BD2AC4F00BBC567 /* libicucore.tbd */; };
+		4731D50F1BD2AC6300BBC567 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4731D50E1BD2AC6300BBC567 /* libc++.tbd */; };
+		4731D5111BD2AC7800BBC567 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4731D5101BD2AC7800BBC567 /* CFNetwork.framework */; };
+		4731D5131BD2AC8500BBC567 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4731D5121BD2AC8500BBC567 /* Security.framework */; };
+		4731D5151BD2AC9700BBC567 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4731D5141BD2AC9700BBC567 /* SystemConfiguration.framework */; };
+		4731D5181BD2C0FC00BBC567 /* FirebaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4731D5171BD2C0FC00BBC567 /* FirebaseController.m */; };
+		47CA00951BCEC38300337D43 /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CA00941BCEC38300337D43 /* AppearanceController.m */; };
+		47D80ED31BB390E2008B2E6E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED21BB390E2008B2E6E /* ListViewController.m */; };
+		47D80ED61BB390FC008B2E6E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED51BB390FC008B2E6E /* DetailViewController.m */; };
+		47D80ED91BB391C6008B2E6E /* ListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80ED81BB391C6008B2E6E /* ListTableViewDataSource.m */; };
+		47D80F771BB4D9EE008B2E6E /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80F761BB4D9EE008B2E6E /* Entry.m */; };
+		47D80F7A1BB4DAA4008B2E6E /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80F791BB4DAA4008B2E6E /* EntryController.m */; };
 		68FFDFDC1AD8144B009F5D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDB1AD8144B009F5D0A /* main.m */; };
 		68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */; };
 		68FFDFE51AD8144B009F5D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE31AD8144B009F5D0A /* Main.storyboard */; };
@@ -32,8 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47CAFEF21BC02B2A00337D43 /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppearanceController.h; path = "../../../week 3/My-Pomodoro/My-Pomodoro/AppearanceController.h"; sourceTree = "<group>"; };
-		47CAFEF31BC02B2A00337D43 /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppearanceController.m; path = "../../../week 3/My-Pomodoro/My-Pomodoro/AppearanceController.m"; sourceTree = "<group>"; };
+		4731D50A1BD2AA7400BBC567 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = DayX/Firebase.framework; sourceTree = "<group>"; };
+		4731D50C1BD2AC4F00BBC567 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		4731D50E1BD2AC6300BBC567 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4731D5101BD2AC7800BBC567 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4731D5121BD2AC8500BBC567 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4731D5141BD2AC9700BBC567 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4731D5161BD2C0FC00BBC567 /* FirebaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseController.h; path = ../FirebaseController.h; sourceTree = "<group>"; };
+		4731D5171BD2C0FC00BBC567 /* FirebaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseController.m; path = ../FirebaseController.m; sourceTree = "<group>"; };
+		47CA00931BCEC38300337D43 /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceController.h; sourceTree = "<group>"; };
+		47CA00941BCEC38300337D43 /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceController.m; sourceTree = "<group>"; };
 		47D80ED11BB390E2008B2E6E /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		47D80ED21BB390E2008B2E6E /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		47D80ED41BB390FC008B2E6E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -62,6 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4731D5151BD2AC9700BBC567 /* SystemConfiguration.framework in Frameworks */,
+				4731D5131BD2AC8500BBC567 /* Security.framework in Frameworks */,
+				4731D5111BD2AC7800BBC567 /* CFNetwork.framework in Frameworks */,
+				4731D50F1BD2AC6300BBC567 /* libc++.tbd in Frameworks */,
+				4731D50D1BD2AC4F00BBC567 /* libicucore.tbd in Frameworks */,
+				4731D50B1BD2AA7400BBC567 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +99,12 @@
 		68FFDFCD1AD8144B009F5D0A = {
 			isa = PBXGroup;
 			children = (
+				4731D5141BD2AC9700BBC567 /* SystemConfiguration.framework */,
+				4731D5121BD2AC8500BBC567 /* Security.framework */,
+				4731D5101BD2AC7800BBC567 /* CFNetwork.framework */,
+				4731D50E1BD2AC6300BBC567 /* libc++.tbd */,
+				4731D50C1BD2AC4F00BBC567 /* libicucore.tbd */,
+				4731D50A1BD2AA7400BBC567 /* Firebase.framework */,
 				68FFDFD81AD8144B009F5D0A /* DayX */,
 				68FFDFF21AD8144B009F5D0A /* DayXTests */,
 				68FFDFD71AD8144B009F5D0A /* Products */,
@@ -98,19 +125,21 @@
 			children = (
 				68FFDFDD1AD8144B009F5D0A /* AppDelegate.h */,
 				68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */,
+				47CA00931BCEC38300337D43 /* AppearanceController.h */,
+				47CA00941BCEC38300337D43 /* AppearanceController.m */,
 				68FFDFE31AD8144B009F5D0A /* Main.storyboard */,
 				47D80ED71BB391C6008B2E6E /* ListTableViewDataSource.h */,
 				47D80ED81BB391C6008B2E6E /* ListTableViewDataSource.m */,
 				47D80ED11BB390E2008B2E6E /* ListViewController.h */,
 				47D80ED21BB390E2008B2E6E /* ListViewController.m */,
+				4731D5161BD2C0FC00BBC567 /* FirebaseController.h */,
+				4731D5171BD2C0FC00BBC567 /* FirebaseController.m */,
 				47D80ED41BB390FC008B2E6E /* DetailViewController.h */,
 				47D80ED51BB390FC008B2E6E /* DetailViewController.m */,
 				47D80F781BB4DAA4008B2E6E /* EntryController.h */,
 				47D80F791BB4DAA4008B2E6E /* EntryController.m */,
 				47D80F751BB4D9EE008B2E6E /* Entry.h */,
 				47D80F761BB4D9EE008B2E6E /* Entry.m */,
-				47CAFEF21BC02B2A00337D43 /* AppearanceController.h */,
-				47CAFEF31BC02B2A00337D43 /* AppearanceController.m */,
 				68FFDFE61AD8144B009F5D0A /* Images.xcassets */,
 				68FFDFE81AD8144B009F5D0A /* LaunchScreen.xib */,
 				68FFDFD91AD8144B009F5D0A /* Supporting Files */,
@@ -249,8 +278,9 @@
 				47D80F7A1BB4DAA4008B2E6E /* EntryController.m in Sources */,
 				47D80F771BB4D9EE008B2E6E /* Entry.m in Sources */,
 				68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */,
+				47CA00951BCEC38300337D43 /* AppearanceController.m in Sources */,
+				4731D5181BD2C0FC00BBC567 /* FirebaseController.m in Sources */,
 				47D80ED31BB390E2008B2E6E /* ListViewController.m in Sources */,
-				47CAFEF41BC02B2A00337D43 /* AppearanceController.m in Sources */,
 				68FFDFDC1AD8144B009F5D0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +408,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DayX",
+				);
 				INFOPLIST_FILE = DayX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmtn.$(PRODUCT_NAME:rfc1034identifier)";
@@ -389,6 +423,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DayX",
+				);
 				INFOPLIST_FILE = DayX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmtn.$(PRODUCT_NAME:rfc1034identifier)";

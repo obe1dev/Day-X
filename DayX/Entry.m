@@ -32,7 +32,8 @@ static NSString * const timestampKey = @"timestampKey";
     
     [dictionary setObject:self.title forKey:titleKey];
     [dictionary setObject:self.bodyText forKey:bodyTextKey];
-    [dictionary setObject:self.timestamp forKey:timestampKey];
+    //firebase wont accept nsdate
+    //[dictionary setObject:self.timestamp forKey:timestampKey];
     
     
      return dictionary;

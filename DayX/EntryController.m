@@ -7,6 +7,8 @@
 //
 
 #import "EntryController.h"
+#import <Firebase/Firebase.h>
+#import "FirebaseController.h"
 
 static NSString * const AllEntriesKey = @"AllEntriesKey";
 
@@ -37,6 +39,7 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
     entry.title = title;
     entry.bodyText = bodyText;
     entry.timestamp = [NSDate date];
+    
     
     [self addEntry:entry];
     
@@ -81,7 +84,12 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
         [entryDictionaries addObject:[entry dictionaryRepresentation]];
     }
     
-    [entryDictionaries writeToFile:self.pathToFile atomically:YES];
+    
+    //comment out this line for firebase
+    //[entryDictionaries writeToFile:self.pathToFile atomically:YES];
+    Firebase *base =[[Firebase alloc]initWithUrl:@"https://devmtnbrock.firebaseio.com/entries/"];
+    
+    [base setValue:entryDictionaries];
 }
 
 
@@ -92,16 +100,29 @@ static NSString * const AllEntriesKey = @"AllEntriesKey";
 
 - (void)loadFromPersistentStorage {
     
-    NSArray *entryDictionaries = [NSArray arrayWithContentsOfFile:self.pathToFile];
+    //comment out this line for firebase
+   // NSArray *entryDictionaries = [NSArray arrayWithContentsOfFile:self.pathToFile];
     
-    NSMutableArray *entries = [NSMutableArray new];
-    for (NSDictionary *entry in entryDictionaries) {
+    //@"https://devmtnbrock.firebaseio.com/entries/"
+    //@"https://devmtndemo.firebaseIO.com/entries/"
+    
+    
+    Firebase *base =[[Firebase alloc]initWithUrl:@"https://devmtnbrock.firebaseio.com/entries/"];
+    [base observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
         
-//question what is this doing
-        [entries addObject:[[Entry alloc] initWithDictionary:entry]];
-    }
+        NSMutableArray *entries = [NSMutableArray new];
+        
+        for (NSDictionary *entry in snapshot.value) {
+            
+            
+            [entries addObject:[[Entry alloc] initWithDictionary:entry]];
+        }
+        self.entries = entries;
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"loadEntries" object:nil];
+
+    }];
     
-    self.entries = entries;
 }
 
 
